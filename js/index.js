@@ -44,9 +44,7 @@ function clickHandleBtn(target){
     const area = 0.5 * triangleBase * triangleHeight;
     setElementInnerText('triangle-area-value', area);
 
-    const setTotal = document.getElementById('total-amount');
     
-    setTotal.appendChild(area);
 
     const rectangleLength = getInputsFieldValue('input-rectangle-length');
     const rectangleWidth = getInputsFieldValue('input-rectangle-width');
