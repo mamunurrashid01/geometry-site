@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+<main class="px-5">
+
+    <div class="container flex flex-col lg:flex-row my-10">
+        <div class="geometry-shape text-center flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="card w-72 px-1 py-2 bg-gray-400 shadow-xl">
+                <figure><img  src="images/triangle.png" alt="Shoes" /></figure>
+                <div class="card-body ">
+                  <h2 class="card-title  justify-center">triangle</h2>
+                  <p>Area(A) = 0.5 * b * h</p>
+                  <p>
+                    <input id="input-triangle-base" type="text" placeholder="b" class="border-none bg-slate-300 pl-2 w-16">
+                    <span>cm</span>
+                    <input id="input-triangle-height" type="text" placeholder="h" class="border-none bg-slate-300 pl-2 w-16">
+                    <span>cm</span>
+                  </p>
+                  <p >Area : <span  id="triangle-area-value"></span> cm<sup>2</sup> </p>
+                  <div class="card-actions">
+                    <button onclick="clickHandleBtn(this)" id="btn-triangle" class="btn btn-primary w-full mt-5">calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-72 px-1 py-2 bg-gray-400 shadow-xl">
+                <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center">rectangle</h2>
+                  <p>To calculate this shape</p>
+                  <p>
+                    <input id="input-rectangle-length" type="text" placeholder="l" class="border-none bg-slate-300 pl-2 w-16">
+                    <span>cm</span>
+                    <input id="input-rectangle-width" type="text" placeholder="w" class="border-none bg-slate-300 pl-2 w-16">
+                    <span>cm</span>
+                  </p>
+                  <p>Area :<span class="ml-1" id="area-of-rectangle" ></span>cm <sup>2</sup></p>
+                  <div class="card-actions">
+                    <button onclick="clickHandleBtn(this)" id="btn-rectangle" class="btn btn-primary w-full">calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-72 px-1 py-2 bg-gray-400 shadow-xl">
+                <figure><img class="w-64" src="images/parallelogram.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center">parallelogram</h2>
+                  <p>To calculate this shape</p>
+                  <p>
+                    <input type="text" id="input-of-parallelogram" placeholder="b" class="border-none bg-slate-300 pl-2 w-16">
+                    <span>cm</span>
+                    <input type="text" id="input-of-parallelogramh" placeholder="h" class="border-none bg-slate-300 pl-2 w-16">
+                    <span>cm</span>
+                  </p>
+                  <p>Area : <span class="ml-1" id="area-of-parallelogram" ></span>cm <sup>2</sup> </p>
+                  <div class="card-actions">
+                    <button onclick="clickHandleBtn(this)" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="geometry-area-calculation ">
+          <h1 class="text-4xl font-medium">Are Calculation Result</h1>
+          <p id="list-items">Selected Items:</p>
+          <p>Total: <span id="total-amount" >00</span> </p>
+          <p>Discount: <span>00</span> </p>
+          <hr>
+          <p>Grand Total: <span>00</span>  </p>
+        </div>
+    </div>
+
+
+</main>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
